@@ -1,0 +1,22 @@
+body {
+    padding: 90px 200px 400px 200px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        padding: 60px 50px 200px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 20px 100px 20px;
+    }
+}
+
+p {
+    font-family: "Roboto";
+    line-height: 2;
+    font-size: 20px;
+    text-align: justify;
+}
