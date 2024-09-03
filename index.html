@@ -53,7 +53,7 @@
 
         <div class = "method">
             <p>
-                Raw and clinical data were cleaned and formatted. Normalisation of data was performed using DESeq2. Differentially expressed genes (DEGs) were identified (p < 0.05) and visualised via heat map and volcano plot. Gene set enrichment analysis (GSEA) and pathway enrichment analysis were then performed to evaluate the biological pathways affected by significant genes.
+                Raw and clinical data were cleaned and formatted. Data normalization was performed using DESeq2. Differentially expressed genes (DEGs) were identified (p < 0.05) and visualised via heat map and volcano plot. Gene set enrichment analysis (GSEA) and pathway enrichment analysis were then performed to evaluate the biological pathways affected by DEGs.
             </p>
         </div>
 
@@ -93,7 +93,7 @@
                     To identify significantly upregulated and downregulated genes 
                 </div>
                 <div class = "objective-points">
-                    To determine affected biological pathways of significant genes
+                    To determine affected biological pathways of DEGs
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
                         Data points of similar condition should be clustered together in a PCA plot, as seen mostly with the healthy data points. 
                     </p>
                     <p>
-                        The random scattering of diseased data points shows high variability within this group, suggesting a lack of a dominant gene expression pattern distinguishing the two groups. This aligns with the 
+                        The random scattering of diseased data points shows high variability within this group, suggesting a lack of a dominant gene expression pattern distinguishing the two groups. This observation aligns with the 
                         <span class = "references"><a href = "https://www.ncbi.nlm.nih.gov/books/NBK539864/" target = "_blank">complex etiology of schizophrenia</a></span>.
                     </p>
                 </div>
@@ -124,7 +124,7 @@
             <div class = "dataquality-content">
                 <img class = "figures" src = "graphs/dispersion estimates.png">
                 <p style = "margin-top: 0px">
-                    The dispersion estimates decrease with increasing mean expression, indicating a good fit of the data to the model and suitability for for differential expression analysis. Strong shrinkage observed (blue dots)  may be to a lack of replicates in the dataset.
+                    The dispersion estimates decrease with increasing mean expression, indicating a good fit of the data to the model and suitability for differential expression analysis. Strong shrinkage observed (blue dots) may be due to a lack of replicates in the dataset.
                 </p>
             </div>
         </div>
@@ -144,7 +144,7 @@
                 <img class = "figures" src = "graphs/heatmap.png">
                 <div>
                     <p style = "margin-top: 0px;">
-                        Clusters of differentially expressed genes are observed in the heatmap. In the bottom half, a more uniform gene expression pattern is observed, with a distinct cluster of genes consistently upregulated in the control group and downregulated in the disease group.
+                        Clusters of DEGs are observed in the heatmap. In the bottom half, a more uniform gene expression pattern is observed, with a distinct cluster of genes consistently upregulated in the control group and downregulated in the disease group.
                     </p>
                     <p>
                         An outlier (ML15) from the control group was identified, with an expression profile that more closely resembles that of the disease samples. This sample was not excluded from the analysis due to limited information regarding potential experimental or data processing issues.
@@ -167,7 +167,7 @@
                     </p>
                     <p>
                         The 
-                        <span class = "references"><a href = "https://www.sciencedirect.com/topics/medicine-and-dentistry/cholecystokinin" target = "_blank">(cholecystokinin) gene</a></span>,
+                        <span class = "references"><a href = "https://www.sciencedirect.com/topics/medicine-and-dentistry/cholecystokinin" target = "_blank">CCK (cholecystokinin) gene</a></span>,
                          which codes for a neuropeptide,  appears to be the most significantly differentially expressed, as it is the farthest from the central line.
                     </p>
                 </div>
@@ -189,7 +189,7 @@
                 <img class = "figures" src = "graphs/enrichment analysis dotplot.png">
                 <div>
                     <p style = "margin-top: 0px; margin-bottom: 0px;">
-                        The GSEA dot plot shows that the upregulated gene set related to the MHC class II protein complex has the highest enrichment. Besides its immunological roles, 
+                        The GSEA dot plot shows that the upregulated gene set related to the MHC class II protein complex has the highest degree of enrichment. Besides its immunological roles, 
                         <span class = "references"><a href = "https://doi.org/10.4172%2F2155-9899.1000479" target = "_blank">MHC class II protein is involved in synaptogenesis</a></span>,
                           and its upregulation may disrupt this process, potentially contributing to the pathology of schizophrenia.
                     </p>
