@@ -32,13 +32,13 @@
 
 #line1 {
     top: 5vw;
-    left: -5vw;
+    left: calc(0vw - 5vw);
     width: 16vw;
     animation-delay: 0s;
 }
 
 #line2 {
-    top: -10vw;
+    top: calc (0vw - 10vw);
     left: 55%;
     width: 17vw;
     animation-delay: 2s;
@@ -46,7 +46,7 @@
 
 #line3 {
     top: 6vw;
-    right: -3vw;
+    right: calc (0vw - 3vw);
     transform: translateX(0);
     animation-delay: 4s;
 }
