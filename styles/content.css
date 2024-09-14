@@ -56,6 +56,13 @@
     grid-template-columns: 3fr 190px;
 }
 
+@media (max-width: 800px) {
+    .title-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
 .title {
     font-family: "DM Serif Text";
     font-size: 46px;
@@ -63,8 +70,7 @@
 }
 
 .data-source-container {
-    display: grid; 
-    grid-template-rows: 1fr 2fr;
+    display: grid;
 }
 
 .data-source a {
