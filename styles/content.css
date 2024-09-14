@@ -1,3 +1,56 @@
+@keyframes move {
+    0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translate(50px, 0) scale(1.05) rotate(15deg);
+    }
+    50% {
+        transform: translate(50px, 50px) scale(1.2) rotate(10deg);
+    }
+    75% {
+        transform: translate(0, 50px) scale(1) rotate(5deg);
+    }
+    100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+}
+
+.section-hero {
+    position: relative;
+    z-index: 1;
+}
+
+.wiggly-line {
+    position: fixed;
+    width: 12vw;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+#line1 {
+    top: 5vw;
+    left: -5vw;
+    width: 16vw;
+    animation-delay: 0s;
+}
+
+#line2 {
+    top: -10vw;
+    left: 55%;
+    width: 17vw;
+    animation-delay: 2s;
+}
+
+#line3 {
+    top: 6vw;
+    right: -3vw;
+    transform: translateX(0);
+    animation-delay: 4s;
+}
+
 .title-container {
     display: grid; 
     grid-template-columns: 3fr 190px;
