@@ -46,7 +46,8 @@
 
 #line3 {
     top: 6vw;
-    margin-right: -15vw;
+    right: 0;
+    margin-right: -16vw;
     animation-delay: 4s;
 }
 
