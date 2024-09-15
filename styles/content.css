@@ -32,21 +32,21 @@
 
 #line1 {
     top: 5vw;
-    left: -5vw;
+    margin-left: -15vw;
     width: 16vw;
     animation-delay: 0s;
 }
 
 #line2 {
-    top: -10vw;
+    margin-top: -18vw;
     left: 55%;
     width: 17vw;
     animation-delay: 2s;
 }
 
 #line3 {
-    top: 6vw;
-    right: -2vw;
+    top: 7vw;
+    left: 92%;
     transform: translateX(0);
     animation-delay: 4s;
 }
